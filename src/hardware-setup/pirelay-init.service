@@ -1,0 +1,8 @@
+[Unit]
+Description=Configure GPIO pin to control a relay
+
+[Service]
+ExecStart=/home/pi/git/pi-trigger-pubsub/src/hardware-setup/pirelay-init.sh
+
+[Install]
+WantedBy=multi-user.target
