@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Coin Flip</title>
+</head>
+<body>
+    <form action="http://127.0.0.1:5000/coin" method="GET">
+        <label>
+            <input type="radio" name="guess" value="Heads"> Heads
+        </label>
+        <label>
+            <input type="radio" name="guess" value="Tails" checked="checked"> Tails
+        </label>
+        <br>
+        <label>
+            Email: <input type="email" name="email" value="jason@ixid.net" required>
+        </label>
+        <input type="hidden" name="form_response" value="http://127.0.0.1:8000/response.html">
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
