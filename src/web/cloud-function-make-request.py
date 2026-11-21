@@ -1,7 +1,8 @@
-from google.cloud import pubsub_v1
+import json
 import os
 import uuid
-import json
+
+from google.cloud import pubsub_v1
 
 
 def publish_message(request):

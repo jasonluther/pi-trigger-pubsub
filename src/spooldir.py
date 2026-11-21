@@ -57,6 +57,6 @@ def spool_loop_forever(spool_dir, process_request_func, extension=None, sleep_du
                 if process_request_func(read_spool_file(spool_dir, filename)):
                     print("Completed processing spool file:", filename)
                     delete_spool_file(spool_dir, filename)
-            except Exception as e:
+            except Exception as e:  # noqa: BLE001 - one bad spool file must not stop the loop
                 print(f"Error processing file {filename}: {e}")
         sleep(sleep_dur)

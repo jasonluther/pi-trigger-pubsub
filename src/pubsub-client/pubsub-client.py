@@ -1,8 +1,10 @@
-import os
-from google.cloud import pubsub_v1
-from concurrent.futures import TimeoutError
 import json
-from dotenv import load_dotenv, find_dotenv
+import os
+from concurrent.futures import TimeoutError
+
+from dotenv import find_dotenv, load_dotenv
+from google.cloud import pubsub_v1
+
 from spooldir import write_spool_file
 
 load_dotenv(find_dotenv())

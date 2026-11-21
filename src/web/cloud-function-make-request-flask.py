@@ -1,9 +1,10 @@
+import json
 import os
 import uuid
-from flask import Flask, request, redirect
+
+from dotenv import find_dotenv, load_dotenv
+from flask import Flask, redirect, request
 from google.cloud import pubsub_v1
-from dotenv import load_dotenv, find_dotenv
-import json
 
 app = Flask(__name__)
 
