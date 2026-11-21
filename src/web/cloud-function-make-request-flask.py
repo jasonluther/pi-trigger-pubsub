@@ -18,17 +18,17 @@ topic_path = publisher.topic_path(project_id, topic_name)
 @app.route("/coin", methods=["POST", "GET"])
 def make_request():
     if request.method == "GET":
-        form=request.args
+        form = request.args
     elif request.method == "POST":
-        form=request.form
-         
+        form = request.form
+
     email = form.get("email")
     guess = form.get("guess")
     form_response = form.get("form_response")
-    
+
     if form_response is None:
-        form_response = "/default-url"  
-    
+        form_response = "/default-url"
+
     message = {
         "guess": guess,
         "requestor_email": email,
