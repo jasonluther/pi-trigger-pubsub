@@ -1,18 +1,9 @@
 {
-    "cSpell.words": [
-        "dotenv",
-        "GPIO",
-        "sendgrid",
-        "spooldir"
-    ],
-    "python.analysis.extraPaths": [
-        "${workspaceFolder}/src"
-    ],
-    "python.autoComplete.extraPaths": [
-        "${workspaceFolder}/src"
-    ],
-    "terminal.integrated.env.osx": {
-        "PYTHONPATH": "${workspaceFolder}/src:${env:PYTHONPATH}"
-    },
-    "python.analysis.completeFunctionParens": true,
+  "cSpell.words": ["dotenv", "GPIO", "sendgrid", "spooldir"],
+  "python.analysis.extraPaths": ["${workspaceFolder}/src"],
+  "python.autoComplete.extraPaths": ["${workspaceFolder}/src"],
+  "terminal.integrated.env.osx": {
+    "PYTHONPATH": "${workspaceFolder}/src:${env:PYTHONPATH}"
+  },
+  "python.analysis.completeFunctionParens": true
 }

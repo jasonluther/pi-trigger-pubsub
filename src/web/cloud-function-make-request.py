@@ -50,7 +50,7 @@ def publish_message(request):
         return ("", 302, {"Location": form_response})
 
     return (
-        f'Request {message["request_id"]} processed successfully.',
+        f"Request {message['request_id']} processed successfully.",
         200,
         headers,
     )
