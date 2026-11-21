@@ -1,12 +1,14 @@
-from dotenv import load_dotenv, find_dotenv
-from time import sleep
 import json
 import os
 import platform
+from time import sleep
+
+from dotenv import find_dotenv, load_dotenv
 
 if platform.system() != "Darwin":
-    import RPi.GPIO as GPIO
+    from RPi import GPIO
 import subprocess
+
 from spooldir import spool_loop_forever, write_spool_file
 
 load_dotenv(find_dotenv())

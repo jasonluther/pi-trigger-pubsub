@@ -28,7 +28,7 @@ You can also set environment variables on the Unix command line for each invocat
 
 Here are some references for installing things onto a Raspberry Pi:
 
-https://cloud-jake.medium.com/google-cloud-sdk-with-service-account-on-raspberry-pi-a06c86ebd3b0
+<https://cloud-jake.medium.com/google-cloud-sdk-with-service-account-on-raspberry-pi-a06c86ebd3b0>
 
 ```bash
 echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] https://packages.cloud.google.com/apt cloud-sdk main" | sudo tee -a /etc/apt/sources.list.d/google-cloud-sdk.list

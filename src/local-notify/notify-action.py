@@ -1,9 +1,11 @@
-from dotenv import load_dotenv, find_dotenv
+import base64
 import json
 import os
-import base64
+
 import sendgrid
+from dotenv import find_dotenv, load_dotenv
 from sendgrid.helpers.mail import *
+
 from spooldir import spool_loop_forever
 
 load_dotenv(find_dotenv())
@@ -44,7 +46,7 @@ def process_request(raw_request):
 
     response = sg.send(mail)
     if response.status_code != 202:
-        raise Exception(f"Failed to send email: {response.body}")
+        raise RuntimeError(f"Failed to send email: {response.body}")
     else:
         os.remove(request["image_filename"])
     return True
